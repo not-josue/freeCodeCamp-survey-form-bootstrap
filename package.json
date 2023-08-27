@@ -1,0 +1,26 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "freecodecamp survey form for responsive web design certificate",
+  "main": "./scss/custom.scss",
+  "scripts": {
+    "build": "sass --no-source-map ./scss/custom.scss styles.css",
+    "purge": "purgecss --css styles.css --content index.html --output ./dist/styles.min.css"
+  },
+  "keywords": [
+    "freecodecamp",
+    "survey-form",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Josue",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5"
+  },
+  "devDependencies": {
+    "purgecss": "^5.0.0",
+    "sass": "^1.66.1"
+  }
+}

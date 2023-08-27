@@ -1,0 +1,28 @@
+// background img
+body {
+    background: url(../assets/skyrim-10th-anniversary.jpg) no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 500px) {
+        background: url(../assets/skyrim-10th-anniversary-small.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+// form background
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+// border color for input, select, etc.
+$input-focus-border-color: #ffc107;
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+$font-family-sans-serif: 'Oswald', sans-serif;
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Bootstrap icons
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";

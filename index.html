@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ESO Survey Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="survey form for freeCodeCamp responsive web design certificate" />
+    <meta name="keywords" content="freeCodeCamp, survey form, responsive web design certificate" />
+    <meta name="author" content="Josue" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./dist/styles.min.css">
+</head>
+
+<body>
+
+    <header class="container-fluid py-5 text-center">
+        <h1 id="title" class="fw-bolder">ESO Survey Form</h1>
+        <p id="description" class="h3">Thank you for taking the time to help improve the game.</p>
+    </header>
+
+    <section class="container mb-5">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-7 p-5 border border-4 form-container text-white border-warning-subtle">
+
+                <form id="survey-form">
+
+                    <!-- Name -->
+                    <div>
+                        <label id="name-label" for="name" class="">Name:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="name-addon"><i class="bi bi-person-circle"></i></span>
+                            <input id="name" type="text" class="" placeholder="Vanus Galerion" aria-label="Name"
+                                aria-describedby="name-addon" autofocus required>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label id="email-label" for="email" class="">Email:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="email-addon"><i class="bi bi-envelope-at"></i></span>
+                            <input id="email" type="email" class="" placeholder="vanus@example.com" aria-label="Name"
+                                aria-describedby="email-addon" required>
+                        </div>
+                    </div>
+
+                    <!-- Age -->
+                    <div>
+                        <label id="number-label" for="number" class="">Age:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="age-addon"><i
+                                    class="bi bi-calendar-check"></i></i></span>
+                            <input id="number" type="number" class="" placeholder="17" min="17" max="70"
+                                aria-label="Age" aria-describedby="age-addon" required>
+                        </div>
+                    </div>
+
+                    <!-- Favorite Class -->
+                    <div>
+                        <label for="dropdown" class="">Favorite Class:</label>
+                        <select id="dropdown" class="form-select" aria-label="Favorite Class">
+                            <option selected disabled>Choose your favorite class</option>
+                            <option value="arcanist">Arcanist</option>
+                            <option value="dragonknight">Dragonknight</option>
+                            <option value="necromancer">Necromancer</option>
+                            <option value="nightblade">Nightblade</option>
+                            <option value="sorcerer">Sorcerer</option>
+                            <option value="templar">Templar</option>
+                            <option value="warden">Warden</option>
+                        </select>
+                    </div>
+
+                    <!-- Favorite Role -->
+                    <div class="mb-3">
+                        <label for="role" class="">Favorite Role:</label>
+                        <select id="role" class="form-select" aria-label="Favorite Role">
+                            <option selected disabled>Choose your favorite role</option>
+                            <option value="magicka dps">Magicka DPS</option>
+                            <option value="stamina dps">Stamina DPS</option>
+                            <option value="healer">Healer</option>
+                            <option value="tank">Tank</option>
+                        </select>
+                    </div>
+
+                    <!-- Improvements -->
+                    <div class="mb-2" role="checkbox">
+                        <label>What improvements would you like to see?</label><br />
+
+                        <input type="checkbox" class="btn-check" id="ultimate" value="ultimate" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="ultimate">Ultimate Abilities</label>
+
+                        <input type="checkbox" class="btn-check" id="active" value="active" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="active">Active Abilities</label>
+
+                        <input type="checkbox" class="btn-check" id="passive" value="passive" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="passive">Passive Abilities</label>
+
+                        <input type="checkbox" class="btn-check" id="resource" value="resource" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="resource">Resource Managment</label>
+
+                        <input type="checkbox" class="btn-check" id="dps" value="dps" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="dps">DPS</label>
+
+                        <input type="checkbox" class="btn-check" id="healing" value="healing" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="healing">Healing</label>
+
+                        <input type="checkbox" class="btn-check" id="tanking" value="tanking" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="tanking">Tanking</label>
+
+                    </div>
+
+                    <!-- Would you recommend? (radio) -->
+                    <div class="mb-2" role="radio">
+                        <label>Would you recommend ESO to a friend?</label><br />
+
+                        <input type="radio" class="btn-check" name="recommend" id="definitely" autocomplete="off"
+                            checked value="definitely">
+                        <label class="btn btn-outline-warning" for="definitely">Definitely</label>
+
+                        <input type="radio" class="btn-check" name="recommend" id="maybe" autocomplete="off" value="maybe">
+                        <label class="btn btn-outline-warning" for="maybe">Maybe</label>
+
+                        <input type="radio" class="btn-check" name="recommend" id="not-sure" autocomplete="off" value="not-sure">
+                        <label class="btn btn-outline-warning" for="not-sure">Not Sure</label>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="textarea">Anything else you would like to share?</label>
+                        <textarea class="form-control focus-ring focus-ring-warning" id="textarea" rows="5">
+                        </textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="d-grid">
+                        <button id="submit" type="submit" class="btn btn-outline-warning">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // form
+        const formElement = document.getElementById("survey-form");
+        formElement.onsubmit = (e) => e.preventDefault();
+        // label classes
+        const labelElements = document.querySelectorAll("label").forEach((element) => element.classList.add("form-label", "h4"));
+        // margin-bottom for each input-group
+        const inputGroups = document.querySelectorAll(".input-group").forEach((element) => element.classList.add("mb-3"));
+        // input classes
+        const inputElements = document.querySelectorAll("input").forEach((element) => element.classList.add("form-control", "focus-ring", "focus-ring-warning"));
+        // select classes
+        const selectElements = document.querySelectorAll("select").forEach((element) => element.classList.add("mb-3", "focus-ring", "focus-ring-warning"));
+    </script>
+
+</body>
+
+</html>
